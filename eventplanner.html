@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planning</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Event Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="search">
+        <h2>Search Events</h2>
+        <input type="text" id="searchBar" placeholder="Search by date, location, or type">
+        <button onclick="searchEvents()">Search</button>
+    </section>
+    
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div id="eventList">
+        </div>
+    </section>
+    
+    <section id="register">
+        <h2>Register</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" required>
+            <span class="error" id="nameError"></span><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" required>
+            <span class="error" id="emailError"></span><br>
+            
+            <label for="Phone Number">Phone Number:</label><br>
+            <input type="text" id="phonenumber" required>
+            <span class="error" id="nameError"></span><br><br>
+            <button type="submit">Register</button>
+
+            <label for="event-name">Event Name:</label><br>
+            <input type="text" id="eventname" required>
+            <span class="error" id="nameError"></span><br>
+
+            <label for="event-date">Event Date:</label><br>
+            <input type="text" id="eventdate" required>
+            <span class="error" id="nameError"></span><br>
+
+            <label for="event-name">Event Name:</label><br>
+            <input type="text" id="eventname" required>
+            <span class="error" id="nameError"></span><br>
+            </form>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
