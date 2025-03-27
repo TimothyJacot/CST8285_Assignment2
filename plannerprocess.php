@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
-$servername = "localhost";  // Change if hosted externally
-$username = "root";         // Default for XAMPP/WAMP
-$password = "";             // Default for XAMPP/WAMP
-$database = "cst8285_assignment2"; // Replace with your database name
+$servername = "localhost";  
+$username = "root";         
+$password = "";             
+$database = "cst8285_assignment2"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
