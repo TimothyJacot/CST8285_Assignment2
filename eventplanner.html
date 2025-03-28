@@ -16,22 +16,22 @@
         <h2></h2>
     <section id="register">
         <h2>Register</h2>
-        <form action="plannerprocess.php" method="POST" id="EventRegistrationForm" onsubmit="return validateForm()">
+        <form action="plannerprocess.php" method="POST" id="EventRegistrationForm">
 
             <label for="event-name">Event Name:</label><br>
-            <input type="text" id="eventname" required>
+            <input type="text" id="eventname" name="Event_Name" required>
             <span class="error" id="nameError"></span><br>
 
             <label for="event-date">Event Date:</label><br>
-            <input type="text" id="eventdate" required>
+            <input type="text" id="eventdate" name="Event_Date" required>
             <span class="error" id="nameError"></span><br>
 
             <label for="event-name">Event Location:</label><br>
-            <input type="text" id="eventlocation" required>
+            <input type="text" id="eventlocation" name="Event_Location" required>
             <span class="error" id="nameError"></span><br>
 
             <label for="event-type">Event Type:</label><br>
-            <input type="text" id="eventType" required>
+            <input type="text" id="eventType" name="Event_Type" required>
             <span class="error" id="nameError"></span>
 
             <button type="submit">Submit</button>
