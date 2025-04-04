@@ -3,22 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name ="author" content="Mahmoud Alnajjar">
-  <title>Create Account</title>
-  <link rel="stylesheet" href="stylesheet.css">
+  <meta name="author" content="Mahmoud Alnajjar"> <!-- Page author -->
+  <title>Create Account</title> <!-- Page title shown in browser tab -->
+  <link rel="stylesheet" href="stylesheet.css"> <!-- Link to external CSS file -->
 </head>
 <body>
+  <!-- Form container styled with CSS -->
   <div class="form-container">
-    <h2>Create Account</h2>
+    <h2>Create Account</h2> <!-- Heading for the form -->
+
+    <!-- Signup form that sends data to signup.php via POST method -->
+    <!-- Calls validateForm() JavaScript function before submitting -->
     <form id="signupForm" action="signup.php" method="POST" onsubmit="return validateForm()">
+      <!-- Username input -->
       <input type="text" name="username" id="username" placeholder="Username" required />
+
+      <!-- Email input -->
       <input type="email" name="email" id="email" placeholder="Email" required />
+
+      <!-- Password input -->
       <input type="password" name="password" id="password" placeholder="Password" required />
+
+      <!-- Confirm Password input -->
       <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required />
+
+      <!-- Submit button -->
       <button type="submit">Create Account</button>
     </form>
+
+    <!-- Error message display area -->
     <p id="errorMsg"></p>
   </div>
+
+  <!-- Link to external JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
