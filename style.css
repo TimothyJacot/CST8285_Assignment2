@@ -1,0 +1,375 @@
+
+/* Styles specific to the Event Planner Registration Page */
+#eventplannerhtml {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* header styling*/
+#eventplannerhtml header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* h1 styling*/
+#eventplannerhtml header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+/* register class styling*/
+#eventplannerhtml #register {
+    background-color: white;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* register h2 styling*/
+#eventplannerhtml #register h2 {
+    color: #3498db;
+    text-align: left;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    font-size: 30xpx;
+}
+/* form styling*/
+#eventplannerhtml form {
+    display: flex;
+    flex-direction: column;
+}
+/* label class styling*/
+
+#eventplannerhtml label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #34495e;
+}
+/* input class styling*/
+#eventplannerhtml input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+/* focus input styling*/
+
+#eventplannerhtml input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+/* error id styling*/
+
+#eventplannerhtml .error {
+    color: #e74c3c;
+    font-size: 0.8em;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+/* button class styling*/
+
+#eventplannerhtml button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+/* button hovering styling*/
+
+#eventplannerhtml button:hover {
+    background-color: #2980b9;
+}
+/* footer styling*/
+
+#eventplannerhtml footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+
+
+
+/*                                          Styles specific to the Create Account Page                                   */
+#createaccounthtml {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+/* account creation form container styling*/
+
+#createaccounthtml .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+/* account creation form container h2 styling*/
+
+#createaccounthtml .form-container h2 {
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+/* account creation form styling*/
+
+#createaccounthtml form {
+    display: flex;
+    flex-direction: column;
+}
+/* account creation inputs styling*/
+
+#createaccounthtml input[type="text"],
+#createaccounthtml input[type="email"],
+#createaccounthtml input[type="password"],
+#createaccounthtml input[type="tel"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+/* account creation input focus styling*/
+
+#createaccounthtml input[type="text"]:focus,
+#createaccounthtml input[type="email"]:focus,
+#createaccounthtml input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+/* account creation button styling*/
+
+#createaccounthtml button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+/* account creation button hovering styling*/
+
+#createaccounthtml button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+/* account creation error message styling*/
+
+#createaccounthtml #errorMsg {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+/* account creation hyperlink id styling*/
+
+.a {
+    color: #3498db;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* account creation hyperlink id hovering styling*/
+
+.a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* body styles for all events */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* header styling for all events */
+header {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* form filtering styling for all events */
+
+#filteringform {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* event container styling for all events */
+.event-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* table styling for all events */
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+/* table header and data styling for all events */
+
+.event-table th, .event-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+/* table header styling for all events */
+
+.event-table th {
+    background-color: #2980b9;
+    color: white;
+}
+/* event container h3 styling for all events */
+
+.event-container h3 {
+    text-decoration: none;
+    color: #2980b9;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+}
+/* hyperlink hovering styling for all events */
+
+.event-container a:hover {
+    color: #2980b9;
+}
+
+
+/* this is CSS styling for login.html file */
+.login-form-container header {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: 300;
+}
+/* login form container styling for login.html file */
+
+.login-form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* login form container form styling for login.html file */
+
+.login-form-container form {
+    display: flex;
+    flex-direction: column; 
+}
+/* login form container label styling for login.html file */
+
+.login-form-container label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #34495e;
+}
+/* login form container input styling for login.html file */
+
+.login-form-container input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+/* login form container input focus styling for login.html file */
+
+.login-form-container input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+/* login form container button styling for login.html file */
+
+.login-form-container button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+/* login form container button hover styling for login.html file */
+
+.login-form-container button:hover {
+    background-color: #2980b9;
+}
+/*login link styling for login.html file */
+
+.login-link {
+    color: #3498db;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* login link hovering styling for login.html file */
+
+.login-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+/* login footer styling for login.html file */
+
+.login-footer {
+    margin: 20px;
+}
