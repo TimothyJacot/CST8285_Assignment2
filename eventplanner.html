@@ -5,40 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CST8285 Assignment 2">
     <meta name="author" content="Timothy Jacot">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Event Planner - Registration Form</title>
     <script defer src="script.js"></script>
 </head>
-<body>
+<!--start of body for event registration form-->
+<body id="eventplannerhtml">
     <header>
-        <h1>Event Planner</h1>
+        <h1>Event Registration Form</h1>
     </header>
         <h2></h2>
     <section id="register">
-        <h2>Register</h2>
+        <h2>Register Here</h2>
+        <!--linking form to plannerprocess.php to handle database inserts-->
         <form action="plannerprocess.php" method="POST" id="EventRegistrationForm">
 
-            <label for="event-name">Event Name:</label><br>
-            <input type="text" id="eventname" name="Event_Name" required>
+            <label for="event-name">What is the name of this event?:</label><br>
+            <input type="text" id="eventname" name="Event_Name" placeholder="Event Name"required>
             <span class="error" id="nameError"></span><br>
 
-            <label for="event-date">Event Date:</label><br>
-            <input type="text" id="eventdate" name="Event_Date" required>
+            <label for="event-date">When will this event be taking place? (One date or several dates):</label><br>
+            <input type="text" id="eventdate" name="Event_Date" placeholder="Event Date"required>
             <span class="error" id="nameError"></span><br>
 
-            <label for="event-name">Event Location:</label><br>
-            <input type="text" id="eventlocation" name="Event_Location" required>
+            <label for="event-location">Where would this event be taking place?:</label><br>
+            <input type="text" id="eventlocation" name="Event_Location" placeholder="Event Location"required>
             <span class="error" id="nameError"></span><br>
 
-            <label for="event-type">Event Type:</label><br>
-            <input type="text" id="eventType" name="Event_Type" required>
+            <label for="event-type">What type of event if this? (birthday, vacation, festival):</label><br>
+            <input type="text" id="eventType" name="Event_Type" placeholder="Event Type" required>
             <span class="error" id="nameError"></span>
 
             <button type="submit">Submit</button>
             </form>
     </section>
     <footer>
-        <p></p>
+        <!--hyperlinks to navigate to the events page and login page-->
+        <h4><a href="allevents.php">Return to All Events page</a></h4>
+        <h4><a href="login.html">Return to login page</a></h4>
     </footer>
 </body>
 </html>
