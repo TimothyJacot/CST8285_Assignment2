@@ -1,41 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Mahmoud Alnajjar"> <!-- Page author -->
-  <title>Create Account</title> <!-- Page title shown in browser tab -->
-  <link rel="stylesheet" href="stylesheet.css"> <!-- Link to external CSS file -->
+  <meta name="author" content="Mahmoud Alnajjar">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css" type="text/css"> 
 </head>
-<body>
-  <!-- Form container styled with CSS -->
+<body id="createaccounthtml">
+  <!--form container for account creationg form-->
   <div class="form-container">
-    <h2>Create Account</h2> <!-- Heading for the form -->
-
-    <!-- Signup form that sends data to signup.php via POST method -->
-    <!-- Calls validateForm() JavaScript function before submitting -->
-    <form id="signupForm" action="signup.php" method="POST" onsubmit="return validateForm()">
-      <!-- Username input -->
-      <input type="text" name="username" id="username" placeholder="Username" required />
-
-      <!-- Email input -->
-      <input type="email" name="email" id="email" placeholder="Email" required />
-
-      <!-- Password input -->
-      <input type="password" name="password" id="password" placeholder="Password" required />
-
-      <!-- Confirm Password input -->
-      <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required />
-
-      <!-- Submit button -->
+    <h2>Create Account</h2>
+    <!--start of account creationg form, sending info to loginprocess.php-->
+    <form id="signupForm" action="loginprocess.php" method="POST" >
+      <input type="text" name="User_Name" id="username" placeholder="Must contain atleast 8 characters"/>
+      <input type="password" name="User_Password" id="password" placeholder="Must have minimum 8 characters, 1 number and 1 special character"/>
+      <input type="email" name="User_Email" id="email" placeholder="Must follow xyz@xyz.xyz format"/>
+      <input type="tel" name="User_PhoneNumber" id="phone" placeholder="Must follow xxx-xxx-xxxx format"/>
       <button type="submit">Create Account</button>
+      <div>
+        <a href="login.html" class="a">Already a member? Return to login page</a>
+      </div>
     </form>
-
-    <!-- Error message display area -->
-    <p id="errorMsg"></p>
   </div>
-
-  <!-- Link to external JavaScript file -->
+  <!--linking this file to script.js for form validation-->
   <script src="script.js"></script>
 </body>
 </html>
